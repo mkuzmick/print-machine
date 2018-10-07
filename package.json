@@ -1,5 +1,5 @@
 {
-  "name": "learninglab-dev-print-md",
+  "name": "mk-print-machine",
   "version": "1.0.1",
   "description": "simple markdown print utility",
   "main": "index.js",
