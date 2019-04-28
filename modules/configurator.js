@@ -11,6 +11,7 @@ exports.configure = function(yargs){
     : (__basedir + '/.tests/testfile.md');
   var cssPath = yargs.css ? yargs.css
     : yargs.darkmode ? (__basedir + '/styles/default-dark.css')
+    : yargs.red ? (__basedir + '/styles/red.css')
     : conf.get('css') ? conf.get('css')
     : (__basedir + '/styles/default.css');
 // TODO: create a new directory in the default root folder (or specified root) based on name of md file.

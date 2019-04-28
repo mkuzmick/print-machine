@@ -32,8 +32,12 @@ console.log(chalk.magenta(JSON.stringify(yargs, null, 4)));
 // note configuration
 console.log("the configuration is:\n\n" + chalk.blue(JSON.stringify(configuration, null, 4)) );
 
+var htmlFilePath = print.makeHtml(configuration);
+
+console.log("done writing out " + htmlFilePath);
+
 if (yargs.pdf || conf.get('pdf')==true) {
-  print.makePdf(configuration);
+  print.makePdf(htmlFilePath);
 }
 
 if (yargs.html || conf.get('html')==true) {
